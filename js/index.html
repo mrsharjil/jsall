@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="title" content="BT5">
+<meta name="description" content="project html">
+<meta name="keywords" content="html , html work">
+<meta name="robots" content="index, follow">
+<meta name="language" content="English">
+<meta name="revisit-after" content="2 days">
+<meta name="author" content="MinhazSharjil">
+<title>frsjs</title>
+<!--favicon link-->
+<link rel="icon" type="image/png" href="images/np.png">
+<link rel="stylesheet" href="icon/7stroke/css/pe-icon-7-stroke.css">
+<!-- icon links -->
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+<!--css link-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/media.css">
+
+</head>
+<body>
+   <!-- show date -->
+ <div class="container">
+    <h1>Click the button to show the line</h1>
+    <button onclick="showText()" class="btn btn-dark">Show Text</button>
+    <p id="st"></p>
+   </div>
+   <!-- show date -->
+<div class="container">
+  <h1>
+    Click the button to show date
+  </h1>
+  <button type="button" onclick="showDate()" class="btn btn-dark">show date</button>
+  <p id="sd"></p>
+</div>
+
+<div class="container m-5">
+  <!-- example 1 -->
+  <!-- JavaScript Variables -->
+  <h2>JavaScript Variables</h2>
+  <p>In this example, x1, y1, and z1 are undeclared.</p>
+  <p>They are automatically declared when first used.</p>
+  <button type="button" class="btn btn-dark" onclick="letVariable()">Click to see result</button>
+  <p id="let_variable"></p>
+
+  <hr>
+
+  <!-- example 2 -->
+  <!-- JavaScript Variables -->
+  <h2>JavaScript Variables</h2>
+  <p>In this example, x2, y2, and z2 are undeclared.</p>
+  <p>They are automatically declared when first used.</p>
+  <button type="button" class="btn btn-dark" onclick="varVariable()">Click to see result</button>
+  <p id="var_variable"></p>
+
+  <hr>
+
+  <!-- example 3 -->
+  <!-- JavaScript Variables -->
+  <h2>JavaScript Variables</h2>
+  <p>In this example, x3, y3, and z3 are undeclared.</p>
+  <p>They are automatically declared when first used.</p>
+  <button type="button" class="btn btn-dark" onclick="constVariable()">Click to see result</button>
+  <p id="const_variable"></p>
+
+  <hr>
+
+  <!-- example 4 -->
+  <!-- JavaScript Variables -->
+  <h2>JavaScript Variables</h2>
+  <p>In this example, price1, price2, and total are variables.</p>
+  <button type="button" class="btn btn-dark" onclick="showPrice()"></button>
+  <p id="total_price"></p>
+
+  <hr>
+
+  <!-- example 5 -->
+  <!-- JavaScript Variables -->
+  <h2>JavaScript Variables</h2>
+  <button type="button" class="btn btn-dark" onclick="favouriteCar()">Click to see my Favorite Car</button>
+  <p id="fav_car"></p>
+
+  <hr>
+
+  <!-- example 6 -->
+  <!-- JavaScript const -->
+  <h2>JavaScript const array changing and adding array element</h2>
+  <button type="button" class="btn btn-dark" onclick="luxuriousCar()">Click to see Luxurious Cars</button>
+  <p id="lux_car"></p>
+
+  <hr>
+
+  <!-- example 7 -->
+  <!-- JavaScript const -->
+  <h2>JavaScript const object does NOT make the objects properties unchangeable</h2>
+  <button type="button" class="btn btn-dark" onclick="ownerCar()">Click to see Car Owner</button>
+  <p id="owner_car"></p>
+
+  <hr>
+
+  <!-- example 8 -->
+  <!-- JavaScript const -->
+  <h2>Create an object with multiple cars and their owners</h2>
+  <button type="button" class="btn btn-dark" onclick="multipleCar()">Click to see Car Owners</button>
+  <p id="multiple_car"></p>
+
+  <hr>
+
+  <!-- example 9 -->
+  <!-- JavaScript const -->
+  <h2>Create an object with multiple items and their owners</h2>
+  <button type="button" class="btn btn-dark" onclick="displayItems()">Click to see details</button>
+  <p id="display_items"></p>
+
+  <hr>
+
+  <!-- example 10 -->
+  <!-- JavaScript Array -->
+  <h2>Book Information</h2>
+  <button type="button" class="btn btn-dark" onclick="displayBooks()">Show Book Info</button>
+  <p id="display_books"></p>
+
+  <hr>
+
+  <!-- example 11 -->
+  <!-- JavaScript Array -->
+  <h2>Student Information</h2>
+  <button type="button" class="btn btn-dark" onclick="displayStudentInfo()">Show Student Information</button>
+  <p id="display_si"></p>
+
+  <hr>
+
+  <!-- example 12 -->
+  <!-- JavaScript Exponentiation -->
+  <h2>JavaScript Exponentiation</h2>
+  <button type="button" class="btn btn-dark" onclick="displayExponentiation()">10^6</button>
+  <p id="display_ex"></p>
+
+  <hr>
+
+  <!-- example 13 -->
+  <!-- JavaScript Exponentiation -->
+  <h2>JavaScript Exponentiation 2</h2>
+  <button type="button" class="btn btn-dark" onclick="displayExponentiation2()">3^6</button>
+  <p id="display_ex2"></p>
+
+  <hr>
+
+  <!-- example 14 -->
+  <!-- JavaScript Pre Increment -->
+  <h2>JavaScript Pre-Increment</h2>
+  <button type="button" class="btn btn-dark" onclick="displayPreIncrement()">Pre-Increment of 5</button>
+  <p id="display_pre_inc"></p>
+
+  <hr>
+
+  <!-- example 15 -->
+  <!-- JavaScript Post Increment -->
+  <h2>JavaScript Post-Increment</h2>
+  <button type="button" class="btn btn-dark" onclick="displayPostIncrement()">Post-Increment of 5</button>
+  <p id="display_post_inc"></p>
+
+  <hr>
+
+  <!-- example 16 -->
+  <!-- JavaScript Post Decrement -->
+  <h2>JavaScript Post-Decrement</h2>
+  <button type="button" class="btn btn-dark" onclick="displayPostDecrement()">Post-Decrement of 5</button>
+  <p id="display_post_dnc"></p>
+
+  <hr>
+
+  <!-- example 17 -->
+  <!-- JavaScript -= -->
+  <h2>JavaScript Subtraction Assignment Operator</h2>
+  <button type="button" class="btn btn-dark" onclick="displaySubtractionOperator()">Subtraction Assignment Operator 25-10</button>
+  <p id="display_sub_op"></p>
+
+  <hr>
+
+  <!-- example 18 -->
+  <!-- JavaScript *= -->
+  <h2>JavaScript Multiplication Assignment Operator</h2>
+  <button type="button" class="btn btn-dark" onclick="displayMultiplicationOperator()">Multiplication Assignment Operator 25*10</button>
+  <p id="display_mt_op"></p>
+
+  <hr>
+
+  <!-- example 19 -->
+  <!-- JavaScript **= -->
+  <h2>JavaScript Exponent Assignment Operator</h2>
+  <button type="button" class="btn btn-dark" onclick="displayExponentOperator()">Exponent Assignment Operator 2**7</button>
+  <p id="display_ex_op"></p>
+
+  <hr>
+
+  <!-- example 20 -->
+  <!-- JavaScript %= -->
+  <h2>JavaScript Modulas Assignment Operator</h2>
+  <button type="button" class="btn btn-dark" onclick="displayModulasOperator()">100 %= 27, remainder is  </button>
+  <p id="display_md_op"></p>
+
+  <hr>
+
+  <!-- example 21 -->
+  <!-- JavaScript String Operators -->
+  <h2>JavaScript String Operators</h2>
+  <button type="button" class="btn btn-dark" onclick="displayStringOperators()">Is N less than S?</button>
+  <p id="display_string_op"></p>
+
+  <hr>
+
+  <!-- example 22 -->
+  <!-- JavaScript Math POW Operators -->
+  <h2>JavaScript Math POW Operators</h2>
+  <button type="button" class="btn btn-dark" onclick="displayMathPow()">Math.pow(9,0.5)</button>
+  <p id="display_math_pow"></p>
+
+  <hr>
+
+  <!-- example 23 -->
+  <!-- JavaScript <<= left shift assignment Operator -->
+  <h2>Left Shift Assignment <<= </h2>
+  <button type="button" class="btn btn-dark" onclick="leftShift()">Click to see the value of 3 being moved to the left</button>
+  <p id="left_s_assign"></p>
+
+  <hr>
+
+  <!-- example 24 -->
+  <!-- JavaScript >>= left shift assignment Operator -->
+  <h2>Right Shift Assignment >>= </h2>
+  <button type="button" class="btn btn-dark" onclick="rightShift()">Click to see the value of 5 being moved to the right</button>
+  <p id="right_s_assign"></p>
+
+  <hr>
+
+  <!-- example 25 -->
+  <!-- JavaScript >>>= Unsigned Right Shift Assignment -->
+  <h2>Unsigned Right Shift Assignment >>>= </h2>
+  <button type="button" class="btn btn-dark" onclick="unsignedRightShift()">Click to see the value of 4 being moved to the right</button>
+  <p id="right_s_unsigned"></p>
+
+  <hr>
+
+  <!-- example 26 -->
+  <!-- JavaScript &&= Logical AND Assignment -->
+  <h2>Logical AND Assignment &&= </h2>
+  <button type="button" class="btn btn-dark" onclick="andAssignmentLogical()">Rahim takes Karim's job</button>
+  <p id="logical_and"></p>
+
+  <hr>
+
+  <!-- example 27 -->
+  <!-- JavaScript ||= Logical Or Assignment -->
+  <h2>Logical Or Assignment ||= </h2>
+  <h3>Login Form</h3>
+  <p>See console after clicking the button</p>
+  <form id="login_form">
+    <label for="username">Username: </label>
+    <input type="text" id="user_name" placeholder="Enter username">
+    <button type="submit" onclick="loginUserName()" class="btn btn-dark">Login</button>
+  </form>
+  
+  <hr>
+
+  <!-- example 28 -->
+  <!-- JavaScript ||= Logical Or Assignment -->
+  <h2>Logical Or Assignment ||= </h2>
+  <h2>Email Notifications</h2>
+  <label for="emailNotification">Receive Email Notifications:</label>
+    <input type="checkbox" id="emailNotification">
+    <button onclick="setNotificationPreference()" type="button" class="btn btn-dark">Set Preference</button>
+    <p id="notificationMessage"></p>
+
+    <hr>
+
+    <!-- example 29 -->
+  <!-- JavaScript ||= Logical Or Assignment -->
+  <h2>Logical Or Assignment ||= </h2>
+  <h2>Email Notifications</h2>
+  <label for="emailNotification">Receive Email Notifications:</label>
+    <input type="checkbox" id="email_Notification" onchange="notificationPreference()">
+    <p id="notification_Message"></p>
+
+    <hr>
+
+    <!-- example 30 -->
+  <!-- JavaScript ||= Logical Or Assignment -->
+  <h2>Logical Or Assignment ||= </h2>
+  <h2>User Age</h2>
+  <label for="age">Enter Your Age:</label>
+  <input type="number" id="age" placeholder="Enter Your Age">
+  <button onclick="setUserAge()" type="button" class="btn btn-dark">Submit</button>
+
+  <hr>
+
+  <!-- example 31 -->
+  <!-- JavaScript ||= Logical Or Assignment -->
+  <h2>Logical Or Assignment ||= </h2>
+  <h2>Default Email</h2>
+  <label for="email">Enter Your Email:</label>
+  <input type="text" id="e_mail" placeholder="Enter Your Email">
+  <button onclick="setUserEmail()" type="button" class="btn btn-dark">Submit</button>
+  <p id="see_email"></p>
+
+  <hr>
+
+  <!-- example 32 -->
+  <!-- JavaScript ||= Logical Or Assignment with if -->
+  <h2>Logical Or Assignment ||= with if </h2>
+  <h2>Age Validation</h2>
+  <label for="age">Enter Your Age:</label>
+  <input type="text" id="a_g_e" placeholder="Enter Your Age">
+  <button onclick="setValidAge()" type="button" class="btn btn-dark">Submit</button>
+  <p id="valid_age"></p>
+
+  <hr>
+
+  <!-- example 33 -->
+  <!-- JavaScript &&= Logical AND Assignment -->
+  <h2>Logical AND Assignment &&= using ternary Operator ?</h2>
+  <h2>Email Notifications</h2>
+  <label for="e_mail_Notification">Receive Email Notifications:</label>
+    <input type="checkbox" id="e_mail_Notification" onchange="emailNotiPre()" checked>
+    <p id="mail_Notification"></p>
+
+    <hr>
+
+    <!-- example 34 -->
+  <!-- JavaScript &&= Logical AND Assignment -->
+  <h2>Logical AND Assignment &&=</h2>
+  <h2>Conditional Update with &&=</h2>
+  <label for="checkbox">Check to Update Text</label>
+    <input type="checkbox" id="check_box" onchange="updateText()">
+    <p id="mes_sage">Original Text</p>
+
+    <hr>
+
+    <!-- example 35 -->
+  <!-- JavaScript Nullish coalescing assignment operator ??= -->
+  <h2>Nullish coalescing assignment operator ??=</h2>
+  <h2>Welcome Message</h2>
+  <p id="welcomeMessage"></p>
+  <button onclick="setUser_Name()" type="button" class="btn btn-dark">Set User Name</button>
+
+  <hr>
+
+    <!-- example 36 -->
+  <!-- JavaScript Nullish coalescing assignment operator ??= -->
+  <h2>Nullish coalescing assignment operator ??=</h2>
+  <h2>First name</h2>
+  <input type="text" id="firstInput" placeholder="Enter your name">
+  <button type="button" onclick="firstNameInput()" class="btn btn-dark">Submit</button>
+  <p id="userNameMessage"></p>
+
+  <hr>
+
+  <!-- example 37 -->
+  <!-- JavaScript Functions -->
+  <h2>JavaScript Functions return</h2>
+  <button type="button" onclick="funcRet()" class="btn btn-dark">7 * 5</button>
+  <p id="func_res"></p>
+
+  <hr>
+
+  <!-- example 38 -->
+  <!-- JavaScript Functions -->
+  <h2>JavaScript Functions Convert to celcius</h2>
+  <button type="button" onclick="convertCelcius()" class="btn btn-dark">77 Degree F</button>
+  <p id="con_cels"></p>
+
+  <hr>
+
+  <!-- example 39 -->
+  <!-- JavaScript Functions -->
+  <h2>JavaScript Functions Convert to celcius</h2>
+  <input type="number" id="farenheit_input" placeholder="Enter Farenheit Value">
+  <button type="button" onclick="fToCelcius()" class="btn btn-dark">Result</button>
+  <p id="far_cels"></p>
+
+  <hr>
+
+  <!-- example 40 -->
+  <!-- JavaScript Objects -->
+  <h2>Creating JavaScript Objects Using an Object Literal</h2>
+  <button type="button" onclick="objectLiteral()" class="btn btn-dark">Click here</button>
+  <p id="obj_lit"></p>
+
+  <hr>
+
+  <!-- example 41 -->
+  <!-- JavaScript Objects -->
+  <h2>JavaScript Object Methods</h2>
+  <button type="button" onclick="clickShowFullName()" class="btn btn-dark">Click here to see the Full Name</button>
+  <p id="csfn"></p>
+
+  <hr>
+
+  <!-- example 42 -->
+  <!-- JavaScript String -->
+  <h2>JavaScript Template backtick Strings</h2>
+  <button type="button" onclick="clickShowLastName()" class="btn btn-dark">Click here to see the Last Name</button>
+  <p id="csln"></p>
+
+  <hr>
+
+  <!-- example 43 -->
+  <!-- JavaScript String Length -->
+  <h2>JavaScript Strings Length</h2>
+  <p>qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq</p>
+  <button type="button" onclick="clickForLength()" class="btn btn-dark">Click here to see the length</button>
+  <p id="cfL"></p>
+
+  <hr>
+
+  <!-- example 44 -->
+  <!-- JavaScript String escape sequence \" -->
+  <h2>JavaScript Escape Sequence \"</h2>
+  <button type="button" onclick="clickEscapeSequence()" class="btn btn-dark">Click here to see</button>
+  <p id="ceseq"></p>
+
+  <hr>
+
+  <!-- example 45 -->
+  <!-- JavaScript Slice String -->
+  <h2>JavaScript Slice String</h2>
+  <p>2025-02-12</p>
+  <button type="button" onclick="yearSlice()" class="btn btn-dark">Click here to see the year</button>
+  <p id="yr_slice"></p>
+
+  <hr>
+
+  <!-- example 46 -->
+  <!-- JavaScript Sub-String -->
+  <h2>JavaScript Sub-String</h2>
+  <p>Banana, Orange, Watermelon, Apple</p>
+  <button type="button" onclick="fruitSubString()" class="btn btn-dark">Click here to see my favourite fruit</button>
+  <p id="frt_ss"></p>
+
+  <hr>
+
+  <!-- example 47 -->
+  <!-- JavaScript String substr -->
+  <h2>JavaScript String substr</h2>
+  <p>Ford, Audi, Bentley, Chevrolet, Dodge</p>
+  <button type="button" onclick="carSubStr()" class="btn btn-dark">Click here to see my favourite car</button>
+  <p id="car_ss"></p>
+
+  <hr>
+
+  <!-- example 48 -->
+  <!-- JavaScript Convert string to upper/lower case -->
+  <h2>JavaScript Convert string to upper/lower case</h2>
+  <p id="best_car">Ford, Audi, Bentley, Chevrolet, Dodge</p>
+  <button type="button" onclick="carUpperCase()" ondblclick="carLowerCase()" class="btn btn-dark">Click once to see Uppercase and twice to see lower case</button>
+  <p id="car_ulcase"></p>
+
+  <hr>
+
+  <!-- example 49 -->
+  <!-- JavaScript String trim() -->
+  <h2>The trim() Method</h2>
+  <h2>Enter your name:</h2>
+    <input type="text" id="trimName" placeholder="Type your name here">
+    <button type="button" class="btn btn-dark" onclick="trimInput()">Submit</button>
+    <p id="out_put"></p>
+
+    <hr>
+
+    <!-- example 50 -->
+  <!-- JavaScript String padStart() -->
+  <h2>JavaScript String padStart()</h2>
+  <h2>Time Formatter</h2>
+
+  <label for="days">Days:</label>
+  <input type="number" id="days" placeholder="days" min="0" max="365">
+
+  <label for="hours">Hours:</label>
+  <input type="number" id="hours" placeholder="hours" min="0" max="23">
+
+  <label for="minutes">Minutes:</label>
+  <input type="number" id="minutes" placeholder="minutes" min="0" max="59">
+
+  <label for="seconds">Seconds:</label>
+  <input type="number" id="seconds" placeholder="seconds" min="0" max="59">
+
+  <button type="button" class="btn btn-dark" onclick="formatTime()">Format Time</button>
+
+  <p id="formattedTime"></p>  
+
+  <hr>
+
+  <!-- example 51 -->
+  <!-- JavaScript number toString() with repeat -->
+  <h2>JavaScript number toString() with repeat</h2>
+  <p>Number = 17</p>
+  <button type="button" class="btn btn-dark" onclick="objectString()">Click to see Number to string</button>
+  <p id="obj_str"></p> 
+
+  <hr>
+
+  <!-- example 52 -->
+  <!-- JavaScript replace -->
+  <h2>JavaScript replace</h2>
+  <button type="button" class="btn btn-dark" onclick="replaceText()" ondblclick="replaceFirstPart()">Click once to fully replace text twice to 1st part</button>
+  <p id="rep_txt">YXZ Abc</p>
+
+  <hr>
+
+  <!-- example 53 -->
+  <!-- JavaScript replace -->
+  <h2>Text Replacer</h2>
+  <label for="content">Enter some text:</label><br>
+  <textarea id="contentNew" rows="5" cols="50">JavaScript is a powerful language. Learning JavaScript can open many doors.</textarea><br><br>
+  <button type="button" class="btn btn-dark" onclick="replaceTextArea()">Replace 'JavaScript' with 'Java'</button>
+  <h3>Updated Text:</h3>
+  <p id="output_area"></p>
+
+  <hr>
+
+  <!-- example 54 -->
+  <!-- JavaScript Arrays -->
+  <h2>Changing an Array Element</h2>
+  <p>cars = ["Saab", "Volvo", "BMW"]</p>
+  <button type="button" class="btn btn-dark" onclick="changeCarList()">Click to Change Car list</button>
+  <p id="output_car"></p>
+
+  <hr>
+
+  <!-- example 55 -->
+  <!-- JavaScript Arrays -->
+  <h2>Accessing the Last Array Element</h2>
+  <p>cars = ["Saab", "Volvo", "BMW"]</p>
+  <button type="button" class="btn btn-dark" onclick="lastCarList()">Click to Change Car list</button>
+  <p id="last_car"></p>
+
+  <hr>
+
+  <!-- example 56 -->
+  <!-- JavaScript Arrays -->
+  <h2>Looping an Array</h2>
+  <button type="button" class="btn btn-dark" onclick="loopingArray()">Click to see list</button>
+  <p id="loop_arr"></p>
+
+  <hr>
+
+  <!-- example 57 -->
+  <!-- JavaScript Arrays -->
+  <h2>Looping an Array for even numbers</h2>
+  <button type="button" class="btn btn-dark" onclick="loopingArrayEven()">Click to see even numbers</button>
+  <p id="loop_arr_even"></p>
+
+  <hr>
+
+  <!-- example 58 -->
+  <!-- JavaScript Arrays -->
+  <h2>Looping an Array for odd numbers</h2>
+  <button type="button" class="btn btn-dark" onclick="loopingArrayOdd()">Click to see odd numbers</button>
+  <p id="loop_arr_odd"></p>
+
+  <hr>
+
+  <!-- example 59 -->
+  <!-- JavaScript Arrays -->
+  <h2>Showing the Names of Students in a Class</h2>
+  <button type="button" class="btn btn-dark" onclick="namesOfStudents()">Click to see the Names of Students</button>
+  <p id="names_students"></p>
+
+  <hr>
+
+  <!-- example 60 -->
+  <!-- JavaScript Arrays -->
+  <h2>Making a Sentence from Words (String Manipulation)</h2>
+  <button type="button" class="btn btn-dark" onclick="sentenceWords()">Click to see the Sentence</button>
+  <p id="sent_words"></p>
+
+  <hr>
+
+  <!-- example 61 -->
+  <!-- JavaScript Arrays -->
+  <h2>The forEach() Method</h2>
+  <button type="button" class="btn btn-dark" onclick="carForEach()">Click to see the Sentence</button>
+  <p id="car_each"></p>
+
+  <hr>
+
+  <!-- example 62 -->
+  <!-- JavaScript Arrays -->
+  <h2>The forEach() Method</h2>
+  <button type="button" class="btn btn-dark" onclick="numbersForEach()">Click to see the Sentence</button>
+  <p id="numbers_each"></p>
+
+  <hr>
+
+  <!-- example 63 -->
+  <!-- JavaScript Arrays -->
+  <h2>The typeof Operator</h2>
+  <button type="button" class="btn btn-dark" ondblclick="typeOfOperator2()" onclick="typeOfOperator()">Click and double click to see the typeof</button>
+  <p id="typeof_op"></p>
+
+  <hr>
+
+  <!-- example 64 -->
+  <!-- Nested JavaScript Objects and Arrays. -->
+  <h2>Nested JavaScript Objects and Arrays.</h2>
+  <button type="button" class="btn btn-dark" onclick="nestedObjectsArrays()" >Click Nested JavaScript Objects and Arrays.</button>
+  <p id="nest_o_a"></p>
+
+  <hr>
+
+  <!-- example 65 -->
+  <!-- The copyWithin() Method -->
+  <h2>The copyWithin() Method</h2>
+  <p>fruitsMonsoon = ["Banana", "Orange", "Apple", "Mango"]</p>
+  <button type="button" class="btn btn-dark" onclick="copyWithinMethod()" >Click here</button>
+  <p id="cpy_with"></p>
+
+  <hr>
+
+  <!-- example 66 -->
+  <!-- JavaScript Array flat() -->
+  <h2>JavaScript Array flat()</h2>
+  <p>studentsSubject = [
+    ["Alice", "Math", "English"],
+    ["Bob", "Science", "History"],
+    ["Charlie", "Physics", "Chemistry"]]
+  </p>
+  <button type="button" class="btn btn-dark" onclick="arrayFlatStudents()" >Click here</button>
+  <p id="arr_flat"></p>
+
+  <hr>
+
+  <!-- example 67 -->
+  <!-- JavaScript Array flat map() -->
+  <h2>JavaScript Array flat map()</h2>
+  <button type="button" class="btn btn-dark" onclick="arrayFlatMap()" >Click here</button>
+  <p id="arr_flat_map"></p>
+
+  <hr>
+
+  <!-- example 68 -->
+  <!-- The splice() Method -->
+  <h2>The splice() Method</h2>
+  <h2>My To-Do List</h2>
+    <p id="todo-list"></p>
+    <button type="button" class="btn btn-dark" onclick="spliceMethod()" >Click here</button>
+    <h3>After Adding a Task in the Middle:</h3>
+    <p id="updated-list"></p>
+
+    <hr>
+
+    <!-- example 69 -->
+  <!-- The splice() Method -->
+  <h2>The splice() Method</h2>
+  <button type="button" class="btn btn-dark" onclick="spliceMethodShow()" >Click here</button>
+  <p id="demo10"></p>
+  <p id="demo20"></p>
+  <p id="demo30"></p>
+
+  <hr>
+
+  <!-- example 70 -->
+  <!-- The slice() Method -->
+  <h2>The slice() Method</h2>
+  <button type="button" class="btn btn-dark" onclick="sliceMethodShow()" >Click here</button>
+  <p id="demo11"></p>
+  <p id="demo21"></p>
+  <p id="demo31"></p>
+
+  <hr>
+
+  <!-- example 71 -->
+  <!-- JavaScript Comparison -->
+  <h2>The () ? : Ternary Operator</h2>
+  <p>Input your age and click the button:</p>
+  <input id="vot_age"/>
+  <button type="button" class="btn btn-dark" onclick="voteValidAge()">Try it</button>
+  <p id="demo100"></p>
+
+  <hr>
+
+  <!-- example 72 -->
+  <!-- JavaScript Comparison -->
+  <h2>The () ? : Ternary Operator with if</h2>
+  <p>Input your age and click the button:</p>
+  <input id="voter_age">
+  <button type="button" class="btn btn-dark" onclick="voterValidAge()">Try it</button>
+  <p id="demo150"></p>
+
+  <hr>
+
+  <!-- example 73 -->
+  <!-- JavaScript if -->
+  <h2>JavaScript if</h2>
+  <button type="button" class="btn btn-dark" onclick="grettingText()">Click to get greetings</button>
+  <p id="geeting_text">Good Evening!</p>
+
+  <hr>
+
+  <!-- example 74 -->
+  <!-- JavaScript if with parseInt() greeting -->
+  <h2>JavaScript if with parseInt() greeting</h2>
+  <h2>Enter the time (24-hour format):</h2>
+    <input type="number" id="time_Input" placeholder="Enter hour (0-23)">
+    <button type="button" class="btn btn-dark" onclick="greetBasedOnTime()">Get Greeting</button>
+    <p id="get_greeting"></p>
+
+    <hr>
+
+    <!-- example 75 -->
+  <!-- JavaScript if A time-based greeting -->
+  <h2>A time-based greeting</h2>
+  <button type="button" class="btn btn-dark" onclick="greetTime()">Get Greeting</button>
+    <p id="time_greeting"></p>
+  
+  <hr>
+
+    <!-- example 76 -->
+  <!-- JavaScript Switch Statement -->
+  <h2>JavaScript Switch Statement</h2>
+  <h2>What day is it today?</h2>
+  <button type="button" class="btn btn-dark" onclick="dayFinder()">Get Day</button>
+    <p id="day_find"></p>
+
+    <hr>
+
+    <!-- example 77 -->
+  <!-- JavaScript Switch Statement -->
+  <h2>JavaScript Switch Statement</h2>
+  <h2>What day is it today?</h2>
+  <button type="button" class="btn btn-dark" onclick="weekendFinder()">Weekend</button>
+    <p id="week_find"></p>
+
+    <hr>
+
+    <!-- example 78 -->
+  <!-- JavaScript Switch Statement -->
+  <h2>JavaScript Switch Statement</h2>
+  <h2>Text's Based on Days</h2>
+  <button type="button" class="btn btn-dark" onclick="weekendCombinedFinder()">Day's Quote</button>
+    <p id="week_c_find"></p>
+
+    <hr>
+
+    <!-- example 79 -->
+  <!-- JavaScript For Loop -->
+  <h2>JavaScript For Loop</h2>
+  <button type="button" class="btn btn-dark" onclick="car_loop()">Car List</button>
+    <p id="loop-car"></p>
+
+    <hr>
+
+    <!-- example 80 -->
+  <!-- JavaScript For Loop with multiple expression 1-->
+  <h2>JavaScript For Loop with multiple expression 1</h2>
+  <button type="button" class="btn btn-dark" onclick="mt_exp()">Square Value</button>
+    <p id="mt-express"></p>
+
+    <hr>
+
+    <!-- example 81 -->
+  <!-- For Loop with Restart or Stop-->
+  <div style="background-color: powderblue;">
+    <h2>For Loop with Restart or Stop</h2>
+    <button type="button" class="btn btn-dark">Loop with Restart or Stop</button>
+      <p id="mtexpress2"></p>
+    </div>
+  
+
+
+
+
+ <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
